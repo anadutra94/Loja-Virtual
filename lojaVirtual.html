@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="Cherry.jpg" alt="logo">
+        <img class="logo_loja"src="Cherry.jpg" alt="logo">
         <h1 class="nome_loja">Cherry Burger</h1>
         <ul class="menu">
             <li class="abas"><a href="#lojaVirtual">Inicio</a></li>
@@ -16,11 +16,54 @@
             <li class="abas"><a href="#contato_loja">Contato</a></li>
         </ul>
     </header>
-    <main>
-        <video src="Cherry Burguer.mp4" autoplay loop><br>
-        
+    <main class="conteiner">
+        <video src="Cherry Burguer.mp4" autoplay loop> </video>
+        <h1>Nossos combos unícos</h1>
         <div class="burguer1"><br>
-        <img src="burger1.jpg" >
+        <img class="combo_tradicional" src="burger1.jpg" alt="Um combo de hambúrguer comum">
+        <h1 class="titulo_comboT">Combo Tradicional</h1>
+        <p class="ingredientes_burguerTradicional">O combo contém: Pão brioche, hambúrguer bovino, queijo, alface, tomate,<br>bacon e molho especial, acompanhado de refrigerante de sua escolha e batata frita média.</p>
+        <h1>APENAS R$30,00</h1>
+        </div>
+        <div class="burguer2">
+        <img class="combo_especial" src="burguer2.jpg" alt="Um combo de hambúrguer especial">
+        <h1 class="titulo_comboE">Combo Especial</h1>
+        <p class="ingredientes_burguerEspecial">O combo contém: Pão brioche, hambúrguer bovino artesanal, queijo cheddar, cebola crispy,<br>molho especial, alface e tomate, acompanhado de refrigerante de sua escolha e nuggets de frango. </p><br>
+        <h1>APENAS R$40,00</h1>
+        </div>
+        <div class="burguer3">
+        <img class="combo_kids" src="burguer3.jpg" alt="Um combo de hambúrguer kids">
+        <h1 class="titulo_combok">Combo Kids</h1>
+        <p class="ingredientes_burguerKids">O combo contém: Pão com gergelim, hambúrguer bovino, queijo, milho, alface e tomate,<br>acompanhado de refrigerante de sua escolha, batata pequena chips e sundae de morango.</p><br>
+        <h1>APENAS R$20,00</h1>
+        </div><br>
+        <div>
+                    <h1 id="contato_loja">Cadastro de inscrição</h1>
+                    <form>
+                        <label for="nome" type="text" id="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+                    
+                        <label for="idade" type="number" id="idade">Idade</label>
+                        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" min="0" max="120" required><br>
+                    
+                        <label for="email" type="email" id="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+                    
+                        <label for="cidade" type="cidade" id="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite a sua cidade" required>
+                    
+                        <label for="telefone" type="telefone" id="telefone">Telefone</label>
+                        <input type="phone" id="telefone" name="telefone" placeholder="Digite seu número de telefone" maxlength="11"
+                            required>
+                    
+                        <label for="produtoDesejado" type="text" id="produtoDesejado">Produto desejado</label>
+                        <input type="text" id="produtoDesejado" name="produtoDesejado" placeholder="Digite o produto desejado" required>
+                    
+                        <label for="horario" type="horario" id="horario">Melhor horário</label>
+                        <input type="time" id="horario" name="horario" placeholder="Digite o melhor horario" min="09:00" max="18:00"
+                            required>
+                        <input type="submit" value="Enviar">
+                    </form>
         </div>
     </main>
 
